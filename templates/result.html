@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Result</title>
+</head>
+<body>
+    <h2>Your Generated Video</h2>
+
+    <video width="720" controls autoplay>
+        <source src="{{ url_for('static', filename='videos/' + filename) }}" type="video/mp4">
+    </video>
+
+    <br><br>
+    <a href="/">Generate Another</a>
+</body>
+</html>
